@@ -137,6 +137,7 @@ const MultiSelectComponent: <T>(
 
     const eventOpen = () => {
       if (!disable) {
+        _measure();
         setVisible(true);
         if (onFocus) {
           onFocus();
